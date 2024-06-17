@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>BEMAT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body class="index_body">
+    <section >
+        <nav class="navbar ">
+            <img src="images/bemat_logo.jpg" alt="Logo" class="bemat_logo">
+            <ul>
+                <li> <a href="index.html"> HOME</a></li>
+                <li><a href="about.html"> ABOUT</a></li>
+                <li><a href="#contact" > CONTACT</a></li>
+
+            </ul>
+        </nav>
+
+        <nav>
+            <div class="section_one">
+                <div class="main-content">
+                    <h2>The Wonders of Wildlife</h2>
+                    <br>
+                    <p>Sustainable use of natural resources through <br> research and action.</p>
+                    <br><button type="button" class="home_read_more"><strong>READ MORE</strong></button>
+                </div>
+                <div class="main-content2">
+                    
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/frog1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/frog2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/animal1.jpg" style="width:100%">
+                    </div>
+        
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+                </div>
+        
+        </nav>
+
+</section>
+
+    <section class="section_two">
+        <h3>Our Partners</h3>
+        <div class="museum">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        
+        <div class="wrti">
+            <img src="images/wrti2-logo.jpg" alt="">
+
+        </div>
+        <div class="Coalitionwild">
+            <img src="images/Coalitionwild.jpg" alt="">
+
+        </div>
+ 
+
+    </section>
+    <section class="section_three">
+        
+        <div>
+            <h2>BENEFITS</h2>
+            <div class="education">
+                <h5>Educational Insight</h5>
+                <p>Access scientifically-backed information that 
+                    can<br>be used for academic purposes or 
+                professional development in related fields.</p>
+            </div>
+            <div class="informed">
+                <h5>Informed conservation effort</h5>
+                <p>Learn about endangered species and conservation 
+                    strategies, helping to support and participate in 
+                    wildlife preservation initiatives.</p>
+            </div>
+            <div class="tourism">
+                <h5>Wildlife Tourism and Eco-Travel</h5>
+                <p>Information on ethical wildlife tourism opportunities.
+                    Advice on how to minimize environmental impact while traveling. 
+                </p>
+            </div>
+            <div class="library">
+                <h5>Resource Library</h5>
+                <p>Guides on species identification, habitat management, and access to digital tools 
+                    and apps useful for research and conservation efforts. 
+                    </p>
+            </div>
+       </div>
+    </section>
+    <section class="section_four">
+        <h3>THIS IS HOW WE DO IT</h3>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-circle">1</div>
+                <p>Planning and Preparation</p>
+            </div>
+            <div class="step">
+                <div class="step-circle">2</div>
+                <p>Field Collection</p>
+            </div>
+            <div class="step">
+                <div class="step-circle">3</div>
+                <p>Laboratory Analysis</p>
+            </div>
+            <div class="horizontal-rule"></div>
+            <div class="step">
+                <div class="step-circle">4</div>
+                <p>Data Analysis</p>
+            </div>
+            <div class="step">
+                <div class="step-circle">5</div>
+                <p>Reporting & Dissemination</p>
+            </div>
+            <div class="step">
+                <div class="step-circle">6</div>
+                <p>Application & Follow-Up</p>
+            </div>
+        </div>
+    </section>
+    <section class="section_five" id="contact">
+        <h4>For Inquiries, get in touch</h4>
+        <div class="Contact_box">
+            
+            <h2>CONTACT</h2>
+                <form action="" class="contact_form">
+                <b> <label for="">Email</label><br></b>
+                    <input type="email" name="" class="Contact_input_email"><br>
+                <b><label for="">Message</label><br></b>
+                    <input type="text" name="" class="Contact_input_message"><br>
+                    <button type="submit" class="Contact_button"><b>SEND</b> </button>
+                </form>
+        </div>
+
+
+    </section>
+
+    <footer class="home_footer">
+        <table>
+            <tr>
+                <td>info@bemat.org</td>
+                <td>Environmental Consultant</td>
+                <td>Our Story</td>
+                <td>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/bemat_consultancy?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                </td>
+            </tr>
+        </table>
+        <p>Copyright © 2024 BEMAT. All rights reserved.</p>
+    </footer>
+
+
+
+
+<script>
+        let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+</script>
+</body>
+</html>
